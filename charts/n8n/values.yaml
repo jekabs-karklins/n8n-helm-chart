@@ -38,13 +38,13 @@ ingress:
   # define a custom ingress class name, e.g. "traefik" or "nginx"
   className: ""
   hosts:
-    - host: n8n.dev-sims.ess.eu
+    - host: n8n.example.com
       paths:
         - path: /
           pathType: Prefix
   tls: []
     # - hosts:
-    #     - n8n.dev-sims.ess.eu
+    #     - n8n.example.com
     #   secretName: n8n-dev-sims-tls
 
 # the main (n8n) application related configuration + Kubernetes specific settings
