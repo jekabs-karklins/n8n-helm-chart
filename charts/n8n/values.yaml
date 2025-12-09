@@ -45,7 +45,7 @@ ingress:
   tls: []
     # - hosts:
     #     - n8n.example.com
-    #   secretName: n8n-dev-sims-tls
+    #   secretName: n8n-dev-example-tls
 
 # the main (n8n) application related configuration + Kubernetes specific settings
 # The config: {} dictionary is converted to environmental variables in the ConfigMap.
