@@ -33,19 +33,19 @@ hostAliases: []
 # Ingress
 #
 ingress:
-  enabled: false
+  enabled: true
   annotations: {}
-  # define a custom ingress class Name, like "traefik" or "nginx"
+  # define a custom ingress class name, e.g. "traefik" or "nginx"
   className: ""
   hosts:
-    - host: workflow.example.com
+    - host: n8n.dev-sims.ess.eu
       paths:
         - path: /
           pathType: Prefix
   tls: []
     # - hosts:
-    #    - workflow.example.com
-    #  secretName: host-domain-cert
+    #     - n8n.dev-sims.ess.eu
+    #   secretName: n8n-dev-sims-tls
 
 # the main (n8n) application related configuration + Kubernetes specific settings
 # The config: {} dictionary is converted to environmental variables in the ConfigMap.
